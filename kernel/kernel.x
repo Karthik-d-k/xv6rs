@@ -39,7 +39,9 @@ SECTIONS
 
   .bss : {
     . = ALIGN(16);
-    *(.sbss .sbss.*) /* do not need to distinguish this from .bss */
+    *(.bss.stack0)         /* boot stacks: must be 16-byte aligned */
+    . = ALIGN(16);
+    *(.sbss .sbss.*)       /* do not need to distinguish this from .bss */
     . = ALIGN(16);
     *(.bss .bss.*)
   }

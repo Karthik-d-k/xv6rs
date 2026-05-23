@@ -3,11 +3,10 @@
 use crate::param::NCPU;
 
 // entry.rs needs one stack per CPU.
-#[repr(C, align(16))]
-struct Stack([u8; 4096 * NCPU]);
-
+// 16-byte Alignment is enforced by kernel.x
 #[unsafe(no_mangle)]
-static mut stack0: Stack = Stack([0; 4096 * NCPU]);
+#[unsafe(link_section = ".bss.stack0")]
+static mut stack0: [u8; 4096 * NCPU] = [0; 4096 * NCPU];
 
 // entry.rs jumps here in machine mode on stack0.
 #[unsafe(no_mangle)]
