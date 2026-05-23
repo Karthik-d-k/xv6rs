@@ -2,3 +2,7 @@
 members = ["kernel"]
 default-members = []
 resolver = "3"
+
+[profile.release]
+debug = "full"
+strip = false
