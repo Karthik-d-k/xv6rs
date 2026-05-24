@@ -15,3 +15,11 @@ fn panic(_info: &PanicInfo) -> ! {
         unsafe { core::arch::asm!("wfi") }
     }
 }
+
+// start() jumps here in supervisor mode on all CPUs.
+#[unsafe(no_mangle)]
+pub extern "C" fn main() -> ! {
+    loop {
+        unsafe { core::arch::asm!("wfi") }
+    }
+}
