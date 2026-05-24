@@ -1,9 +1,10 @@
 #![no_std]
 #![no_main]
-#![deny(warnings)]
+// #![deny(warnings)] // TODO: Enable after full OS impl
 
 mod entry;
 mod param;
+mod riscv;
 mod start;
 
 use core::panic::PanicInfo;
