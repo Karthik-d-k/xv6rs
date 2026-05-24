@@ -32,7 +32,7 @@ help:
 # Build the kernel and emit kernel.asm / kernel.sym
 kernel:
     cd kernel && cargo build --release
-    {{ OBJDUMP }} -S {{ KERNEL_TARGET }} > kernel/kernel.asm
+    {{ OBJDUMP }} -d {{ KERNEL_TARGET }} > kernel/kernel.asm
     {{ OBJDUMP }} -t {{ KERNEL_TARGET }} | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > kernel/kernel.sym
 
 # Run QEMU normally
