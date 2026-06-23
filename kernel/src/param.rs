@@ -1,4 +1,4 @@
-// Ref: https://github.com/mit-pdos/xv6-riscv/blob/riscv/kernel/param.h
+// Ref: https://github.com/Karthik-d-k/xv6-riscv/blob/riscv/kernel/param.h
 
 pub const NPROC: usize = 64; // maximum number of processes
 pub const NCPU: usize = 8; // maximum number of CPUs

@@ -1,4 +1,4 @@
-/* Ref: https://github.com/mit-pdos/xv6-riscv/blob/riscv/kernel/kernel.ld */
+/* Ref: https://github.com/Karthik-d-k/xv6-riscv/blob/riscv/kernel/kernel.ld */
 
 OUTPUT_ARCH( "riscv" )
 ENTRY( _entry )

@@ -1,4 +1,4 @@
-// Ref: https://github.com/mit-pdos/xv6-riscv/blob/riscv/kernel/start.c
+// Ref: https://github.com/Karthik-d-k/xv6-riscv/blob/riscv/kernel/start.c
 
 use crate::main;
 use crate::param::NCPU;

@@ -1,4 +1,4 @@
-// Ref: https://github.com/mit-pdos/xv6-riscv/blob/riscv/kernel/uart.c
+// Ref: https://github.com/Karthik-d-k/xv6-riscv/blob/riscv/kernel/uart.c
 
 // low-level driver for 16550a UART.
 
