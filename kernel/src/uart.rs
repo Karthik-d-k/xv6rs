@@ -23,7 +23,7 @@ const RHR: u64 = 0; // receive holding register (for input bytes)
 const THR: u64 = 0; // transmit holding register (for output bytes)
 
 const DLAB_LSB: u64 = 0; // Divisor Latch (LSB) when DLAB bit (LCR_BAUD_LATCH) is set
-const DLAB_MSB: u64 = 0; // Divisor Latch (MSB) when DLAB bit (LCR_BAUD_LATCH) is set
+const DLAB_MSB: u64 = 1; // Divisor Latch (MSB) when DLAB bit (LCR_BAUD_LATCH) is set
 
 const IER: u64 = 1; // interrupt enable register
 const IER_RX_ENABLE: u8 = 1 << 0;
